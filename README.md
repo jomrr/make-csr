@@ -8,16 +8,22 @@ Makefile for creating Certificate Signing Requests (CSRs) to be signed by an ext
 
 The `make-csr` project is a Makefile-based tool for creating CSRs.
 It provides a simple and automated way to generate and manage Certificate Signing Requests.
-The directory structure is simplified for a centralized use case.
+
+OpenSSL configuration for the CSRs to create, are located in etc/.
+The resulting private keys (*.key) in PEM format, 
+the certificate signing requests (*.csr ) in PEM format and in txt format (*.txt)
+for easy readability are generated in dist/.
+
+The directory structure is simplified for a centralized use case as follows.
 
 ### Directory Structure
 
 | level 0 | level 1 | level 2 | description |
 | ------- | ------- | ------- | ----------- |
-| **name** | | | base dir |
+| **make-csr** | | | base dir |
 | | dist  | | issued certificate signing requests and keys |
 | | etc | | openssl configuration files for CAs |
-| | | server.example.com.cnf | example csr configuration |
+| | | server.example.com.cnf | example openssl configuration for csr  |
 
 ## Installation
 
