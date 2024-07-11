@@ -1,6 +1,6 @@
 # make-csr
 
-![GitHub License](https://img.shields.io/github/license/jam82/make-csr?style=for-the-badge&color=blue&link=https%3A%2F%2Fgithub.com%2Fjam82%2Fmake-csr%2Fblob%2Fmain%2FLICENSE) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/jam82/make-csr?style=for-the-badge&color=blue&link=https%3A%2F%2Fgithub.com%2Fjam82%2Fmake-csr%2Fissues)
+![GitHub License](https://img.shields.io/github/license/jomrr/make-csr?style=for-the-badge&color=blue&link=https%3A%2F%2Fgithub.com%2Fjomrr%2Fmake-csr%2Fblob%2Fmain%2FLICENSE) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/jomrr/make-csr?style=for-the-badge&color=blue&link=https%3A%2F%2Fgithub.com%2Fjomrr%2Fmake-csr%2Fissues)
 
 Makefile for creating Certificate Signing Requests (CSRs) to be signed by an external CA.
 
@@ -23,7 +23,7 @@ The directory structure is simplified for a centralized use case.
 
 To install `make-csr`, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/jam82/make-csr.git ~/make-csr
+1. Clone the repository: `git clone https://github.com/jomrr/make-csr.git ~/make-csr
 2. Change into the project directory: `cd ~/make-csr`
 3. Customize `~/make-csr/settings.mk` to your needs
 4. Create `cd ~/make-csr/etc/server/*.cnf` configuration files for the CSRs you want
