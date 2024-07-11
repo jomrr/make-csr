@@ -44,10 +44,14 @@ CONFIGS				:= $(shell find etc -type f -name "*.cnf" -execdir basename {} .cnf '
 
 .PHONY: help
 help:
-	echo "Usage: make [target]"
-	echo "       make all      Create all CSRs for cnf files in etc/"
-	echo "       make <fqdn>   Create CSR for <fqdn> from etc/<fqdn>.cnf in dist/<fqdn>.{key,csr}"
-	echo "Static conf is provided by etc/<fqdn>.cnf"
+	@echo "Usage: make [target]"
+	@echo "       make all       Create all CSRs for cnf files in etc/"
+	@echo "       make <fqdn>    Create CSR for <fqdn> from etc/<fqdn>.cnf in dist/<fqdn>.{key,csr}"
+	@echo "       make clean     Delete all CSRs in dist/"
+	@echo "       make distclean Delete dist/ directory"
+	@echo "       make help      Show this help"
+	@echo
+	@echo "OpenSSL configuration is provided by etc/<fqdn>.cnf files."
 
 # delete CSRs in dist/
 .PHONY: clean
