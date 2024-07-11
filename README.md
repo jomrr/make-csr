@@ -16,10 +16,7 @@ The directory structure is simplified for a centralized use case.
 | **name** | | | base dir |
 | | dist  | | issued certificate signing requests and keys |
 | | etc | | openssl configuration files for CAs |
-| | | server | folder for individual server configuration files, e.g. yourserver.example.com.cnf |
-| | | client | folder for individual client configuration files, e.g. myclient.example.com.cnf |
-| | | server.cnf | template server csr configuration |
-| | | client.cnf | template client csr configuration |
+| | | server.example.com.cnf | example csr configuration |
 
 ## Installation
 
