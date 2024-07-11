@@ -30,10 +30,10 @@ The directory structure is simplified for a centralized use case as follows.
 
 To install `make-csr`, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/jomrr/make-csr.git ~/make-csr
+1. Clone the repository: `cd ~ && git clone https://github.com/jomrr/make-csr.git ~/make-csr`
 2. Change into the project directory: `cd ~/make-csr`
-3. Customize `~/make-csr/settings.mk` to your needs
-4. Create `cd ~/make-csr/etc/server/*.cnf` configuration files for the CSRs you want
+3. Customize DN settings in `$EDITOR ~/make-csr/Makefile`
+4. Create `~/make-csr/etc/server/*.cnf` configuration files for the CSRs you want
 
 ## Usage Examples
 
